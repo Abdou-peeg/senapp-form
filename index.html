@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - SenApp Challenge 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #007BFF;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Inscription - SenApp Challenge 2025</h2>
+    <form action="https://formspree.io/f/xnnpgkwq" method="POST">
+      <label for="name">Nom complet</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Numéro de téléphone</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="age">Âge</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="city">Ville de résidence</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="status">Profession / Statut</label>
+      <input type="text" id="status" name="status">
+
+      <label for="team">Nom de l'équipe (si en équipe)</label>
+      <input type="text" id="team" name="team">
+
+      <label for="team_size">Nombre de personnes dans l'équipe</label>
+      <select id="team_size" name="team_size">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <label for="skills">Domaines de compétence</label>
+      <textarea id="skills" name="skills" placeholder="Développement web, design, UX/UI, etc."></textarea>
+
+      <label for="experience">Avez-vous déjà participé à un concours tech ?</label>
+      <select id="experience" name="experience">
+        <option value="Oui">Oui</option>
+        <option value="Non">Non</option>
+      </select>
+
+      <label for="source">Comment avez-vous connu l'événement ?</label>
+      <input type="text" id="source" name="source">
+
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Envoyer l'inscription</button>
+    </form>
+  </div>
+</body>
+</html>
